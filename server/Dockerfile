@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:boron
 WORKDIR /server
 COPY package*.json .
 RUN npm i
