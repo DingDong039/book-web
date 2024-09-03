@@ -1,8 +1,11 @@
 import React from 'react'
-
-const Book = () => {
+import { Link } from "react-router-dom";
+function Book() {
   return (
-    <div>Book</div>
+    <>
+      <h1>Books</h1>
+      
+    </>
   )
 }
 

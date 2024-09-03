@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+  const navigate = useNavigate();
 
-export default Home
+  const gotoBook = () => {
+    navigate("book");
+  };
+  return (
+    <>
+      <h1>Home</h1>
+      <div>
+        <button onClick={gotoBook}>Books</button>
+      </div>
+    </>
+  );
+};
+
+export default Home;
